@@ -1,7 +1,5 @@
-# SillyJam
-
-# Description:
-Create an npm package that enables real-time collaboration between musicians, allowing them to jam together remotely over the internet. Users can join virtual "jam sessions," where they can play instruments, sing, or contribute to the music in various ways. The package will leverage Socket.IO to handle real-time communication between clients and the server, syncing audio streams and user actions to maintain synchronization across all participants.
+# SillyJam [ WIP ]
+SillyJam is a real-time music collaboration platform where users can create and join virtual rooms to collaborate on music projects together.
 
 # Key Features:
 - Multi-User Jam Sessions: Users can create or join virtual jam sessions where they can collaborate with other musicians in real-time. Each session will have its own unique URL for easy sharing.
