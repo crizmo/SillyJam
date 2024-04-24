@@ -4,6 +4,9 @@ import { useDispatch, useSelector } from "react-redux";
 import Navbar from "../../scenes/navbar";
 import Sidebar from "../../scenes/sidebar";
 
+import CreateRoomWidget from "../widgets/CreateRoomWidget";
+import JoinRoomWidget from "../widgets/JoinRoomWidget";
+
 import { setPosts } from "../../state";
 
 const serverUrl = import.meta.env.VITE_QUAKEAPI;
@@ -29,7 +32,9 @@ const HomePage = () => {
         }}
       >
         <Box flexBasis={isNonMobileScreens ? "20%" : undefined} position={isNonMobileScreens ? "sticky" : undefined} top={isNonMobileScreens ? "0rem" : undefined}>
-          {/* <Sidebar /> */}
+          <CreateRoomWidget />
+          <Box mt="2rem" />
+          <JoinRoomWidget />
         </Box>
         <Box
           flexBasis={isNonMobileScreens ? "50%" : undefined}

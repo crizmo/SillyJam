@@ -45,6 +45,7 @@ router.patch("/:id", verifyToken, updateUser);
 router.patch("/:id/follow/:followerId", verifyToken, addRemoveFollower);
 router.patch("/:id/add-dm/:dmId", verifyToken, addDm);
 router.patch("/:id/remove-dm/:dmId", verifyToken, removeDm);
+
 /* FILE STORAGE */
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
