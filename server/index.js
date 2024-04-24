@@ -12,8 +12,6 @@ import { fileURLToPath } from "url";
 import authRoutes from "./routes/auth.js";
 import userRoutes from "./routes/users.js";
 import roomRoutes from "./routes/rooms.js";
-import postRoutes from "./routes/posts.js";
-import bountyRoutes from "./routes/bounty.js";
 import searchRoutes from "./routes/search.js";
 
 import { register } from "./controllers/auth.js";
@@ -62,15 +60,11 @@ start(io);
 
 /* ROUTES WITH FILES */
 app.post("/auth/register", upload.single("picture"), register);
-app.post("/posts", verifyToken, upload.single("picture"), createPost);
-app.post("/bounty", verifyToken, upload.single("picture"), createBounty);
 
 /* ROUTES */
 app.use("/auth", authRoutes);
 app.use("/users", userRoutes);
 app.use("/rooms", roomRoutes);
-app.use("/posts", postRoutes);
-app.use("/bounty", bountyRoutes);
 app.use("/search", searchRoutes);
 
 /* MONGOOSE SETUP */
