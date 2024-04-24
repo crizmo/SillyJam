@@ -1,6 +1,4 @@
-# SillyJam
-
-# Description:
+# SillyJam [ WIP ]
 SillyJam is a real-time music collaboration platform where users can create and join virtual rooms to collaborate on music projects together.
 
 # Key Features:
