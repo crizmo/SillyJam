@@ -15,8 +15,6 @@ import roomRoutes from "./routes/rooms.js";
 import searchRoutes from "./routes/search.js";
 
 import { register } from "./controllers/auth.js";
-import { createPost } from "./controllers/posts.js";
-import { createBounty } from "./controllers/bounty.js";
 import { verifyToken } from "./middleware/auth.js";
 import { Server } from "socket.io";
 import http from "http";
