@@ -5,8 +5,6 @@ import {
   createRoom,
   updateRoom,
   deleteRoom,
-  joinRoom,
-  leaveRoom
 } from "../controllers/rooms.js";
 import { verifyToken } from "../middleware/auth.js";
 
@@ -24,9 +22,5 @@ router.patch("/:roomId", verifyToken, updateRoom);
 
 /* DELETE */
 router.delete("/:roomId", verifyToken, deleteRoom);
-
-/* JOIN & LEAVE ROOM */
-router.post("/:roomId/join", verifyToken, joinRoom);
-router.post("/:roomId/leave", verifyToken, leaveRoom);
 
 export default router;

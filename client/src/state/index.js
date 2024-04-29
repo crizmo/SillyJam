@@ -61,21 +61,10 @@ export const authSlice = createSlice({
       });
       state.posts = updatedPosts;
     },
-
-    setBounties: (state, action) => {
-      state.bounties = action.payload.bounties;
-    },
-    setBounty: (state, action) => {
-      const updatedBounties = state.bounties.map((bounty) => {
-        if (bounty._id === action.payload.bounties._id) return action.payload.bounties;
-        return bounty;
-      });
-      state.bounties = updatedBounties;
-    }
   },
 });
 
-export const { setMode,setTheme, setLogin, setLogout, setFollowers , setFollowing, setFollowersAndFollowing, setPosts, setPost, setBounties, setBounty } =
+export const { setMode,setTheme, setLogin, setLogout, setFollowers , setFollowing, setFollowersAndFollowing, setPosts, setPost } =
   authSlice.actions;
   
 export default authSlice.reducer;

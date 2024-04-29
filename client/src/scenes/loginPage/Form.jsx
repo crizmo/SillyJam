@@ -17,7 +17,7 @@ import Dropzone from "react-dropzone";
 // import FlexBetween from "components/FlexBetween";
 import Swal from 'sweetalert2';
 
-const serverUrl = import.meta.env.VITE_QUAKEAPI;
+const serverUrl = import.meta.env.VITE_SILLYJAMAPI;
 
 const clientId = import.meta.env.VITE_CLIENT_ID;
 

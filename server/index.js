@@ -53,8 +53,10 @@ const io = new Server(server, {
   },
 });
 
-import start from "./socket/chat.js";
-start(io);
+import chat from "./socket/chat.js";
+import rooms from "./socket/rooms.js";
+chat(io);
+rooms(io);
 
 /* ROUTES WITH FILES */
 app.post("/auth/register", upload.single("picture"), register);

@@ -25,7 +25,7 @@ const CreateRoomWidget = () => {
     const dispatch = useDispatch();
     const navigate = useNavigate();
     const token = useSelector((state) => state.token);
-    const serverUrl = import.meta.env.VITE_QUAKEAPI;
+    const serverUrl = import.meta.env.VITE_SILLYJAMAPI;
 
     const userId = useSelector((state) => state.user._id);
 

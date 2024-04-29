@@ -28,6 +28,10 @@ function App() {
               path="/home"
               element={isAuth ? <HomePage /> : <Navigate to="/" />}
             />
+            <Route 
+              path="/rooms/:roomId"
+              element={<div>Room</div>}
+            />
           </Routes>
         </ThemeProvider>
       </BrowserRouter>

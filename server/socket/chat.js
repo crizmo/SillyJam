@@ -1,10 +1,10 @@
 import User from "../models/User.js";
 import Message from "../models/Message.js";
 
-function start(io) {
-    console.log("socket.io started");
+function chat(io) {
+    console.log("chat socket running");
     io.on("connection", (socket) => {
-        console.log("a user connected");
+        console.log("a user connected to chat");
         socket.on("disconnect", () => {
             console.log("user disconnected");
         });
@@ -61,4 +61,4 @@ function start(io) {
     });
 }
 
-export default start;
+export default chat;

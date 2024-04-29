@@ -26,10 +26,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { setMode, setLogout } from "../../state";
 import { useNavigate } from "react-router-dom";
 import FlexBetween from "../../components/FlexBetween";
-import Popup from 'reactjs-popup';
-import SearchUsers from "../../components/popups/searchUsers";
-
-import quakelogo from "../../../src/assets/quake_logo.png";
 
 const Navbar = () => {
   const [isMobileMenuToggled, setIsMobileMenuToggled] = useState(false);
@@ -52,7 +48,7 @@ const Navbar = () => {
   return (
     <FlexBetween padding="1rem 6%" backgroundColor={alt}>
       <FlexBetween gap="1.75rem">
-        {/* <Typography
+        <Typography
           fontWeight="bold"
           fontSize="clamp(1rem, 2rem, 2.25rem)"
           color="primary"
@@ -64,10 +60,8 @@ const Navbar = () => {
             },
           }}
         >
-        </Typography> */}
-        <a href="/#/home">
-          <img src={quakelogo} alt="Quake Logo" width="100vw" height="auto" />
-        </a>
+            SillyJam
+        </Typography>
       </FlexBetween>
 
 
@@ -79,7 +73,7 @@ const Navbar = () => {
           >
             <Search sx={{ fontSize: "25px" }} />
           </IconButton>
-          {page !== "#/home" && (
+          {page !== "#/ugh" && (
             <Box display="flex" gap="2rem">
               <IconButton onClick={() => dispatch(setMode())}>
                 {theme.palette.mode === "dark" ? (
@@ -97,11 +91,6 @@ const Navbar = () => {
                 onClick={() => navigate("/chat")}
               >
                 <Message sx={{ fontSize: "25px" }} />
-              </IconButton>
-              <IconButton
-                onClick={() => navigate("/bounty")}
-              >
-                <Pix sx={{ fontSize: "25px" }} />
               </IconButton>
               <IconButton>
                 <Notifications sx={{ fontSize: "25px" }} />
@@ -209,11 +198,6 @@ const Navbar = () => {
               onClick={() => navigate("/chat")}
             >
               <Message sx={{ fontSize: "25px" }} />
-            </IconButton>
-            <IconButton
-              onClick={() => navigate("/bounty")}
-            >
-              <Pix sx={{ fontSize: "25px" }} />
             </IconButton>
             <IconButton>
               <Notifications sx={{ fontSize: "25px" }} />

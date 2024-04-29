@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { setFollowersAndFollowing } from "../state";
 import FlexBetween from "./FlexBetween";
 
-const serverUrl = import.meta.env.VITE_QUAKEAPI;
+const serverUrl = import.meta.env.VITE_SILLYJAMAPI;
 
 const Follow = ({ followId, update, user }) => {
     const dispatch = useDispatch();

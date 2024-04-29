@@ -8,7 +8,7 @@ import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { useState, useEffect } from "react";
 
-const serverUrl = import.meta.env.VITE_QUAKEAPI;
+const serverUrl = import.meta.env.VITE_SILLYJAMAPI;
 
 const DmUsers = ({ id }) => {
     const { palette } = useTheme();

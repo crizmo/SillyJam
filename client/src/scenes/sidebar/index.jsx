@@ -148,27 +148,6 @@ const Sidebar = () => {
           </FlexBetween>
 
           <FlexBetween
-            onClick={() => navigate("/bounty")}
-            sx={{
-              "&:hover": {
-                cursor: "pointer",
-                color: theme.palette.primary.dark,
-                backgroundColor: primaryLight,
-                borderRadius: "1rem",
-              },
-              gap: "0.5rem",
-              padding: "8px",
-              borderRadius: "1rem",
-            }}
-            width="100%"
-          >
-            <Pix />
-            <Typography fontWeight="semibold" fontSize="1rem" width="100%">
-              Bounty
-            </Typography>
-          </FlexBetween>
-
-          <FlexBetween
             onClick={() => navigate(`/settings/${user._id}`)}
             sx={{
               "&:hover": {
@@ -186,27 +165,6 @@ const Sidebar = () => {
             <Settings />
             <Typography fontWeight="semibold" fontSize="1rem" width="100%">
               Settings
-            </Typography>
-          </FlexBetween>
-
-          <FlexBetween
-            onClick={() => navigate("/bounty")}
-            sx={{
-              "&:hover": {
-                cursor: "pointer",
-                color: theme.palette.primary.dark,
-                backgroundColor: primaryLight,
-                borderRadius: "1rem",
-              },
-              gap: "0.5rem",
-              padding: "8px",
-              borderRadius: "1rem",
-            }}
-            width="100%"
-          >
-            <Notifications />
-            <Typography fontWeight="semibold" fontSize="1rem" width="100%">
-              Notifications
             </Typography>
           </FlexBetween>
 

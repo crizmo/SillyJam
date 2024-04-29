@@ -8,7 +8,7 @@ import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { useState } from "react";
 
-const serverUrl = import.meta.env.VITE_QUAKEAPI;
+const serverUrl = import.meta.env.VITE_SILLYJAMAPI;
 
 const ChatUsers = ({ user, update, mainUser, setChild2Data }) => {
 

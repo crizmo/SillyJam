@@ -65,23 +65,3 @@ export const deleteRoom = async (req, res) => {
     res.status(500).json({ message: error.message });
   }
 };
-
-// Join a room
-export const joinRoom = async (req, res) => {
-  try {
-    // Logic for joining a room (e.g., adding user to the room's members)
-    res.status(200).json({ message: "Joined room successfully" });
-  } catch (error) {
-    res.status(500).json({ message: error.message });
-  }
-};
-
-// Leave a room
-export const leaveRoom = async (req, res) => {
-  try {
-    // Logic for leaving a room (e.g., removing user from the room's members)
-    res.status(200).json({ message: "Left room successfully" });
-  } catch (error) {
-    res.status(500).json({ message: error.message });
-  }
-};

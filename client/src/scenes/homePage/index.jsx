@@ -9,7 +9,7 @@ import JoinRoomWidget from "../widgets/JoinRoomWidget";
 
 import { setPosts } from "../../state";
 
-const serverUrl = import.meta.env.VITE_QUAKEAPI;
+const serverUrl = import.meta.env.VITE_SILLYJAMAPI;
 
 const HomePage = () => {
   const isNonMobileScreens = useMediaQuery("(min-width:1000px)");
